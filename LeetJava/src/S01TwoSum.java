@@ -1,7 +1,11 @@
+/* Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order. */
+
 import Resources.Printer;       // Opting to import my own method for Array -> String, 
 //import java.util.Arrays;
 
-public class TwoSum {
+public class S01TwoSum {
     public int[] twoSum(int[] nums, int target) {
         int[] answer = new int[2];
         for (int i = 0; i < nums.length; i++) {         // Iterate through every pair of values
@@ -18,7 +22,7 @@ public class TwoSum {
 
     // From here on is debugging work, including tests for the method.
     public static void main(String[] args) {
-        TwoSum sol = new TwoSum();
+        S01TwoSum sol = new S01TwoSum();
 
         int[][] answers = new int[3][5];
         int[] targets = new int[3];
